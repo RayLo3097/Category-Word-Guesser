@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane fx:id="serverConnection_screen" xmlns:fx="http://javafx.com/fxml" fx:controller="ServerController">
+    <top><HBox alignment="CENTER">
+        <BorderPane.margin>
+            <Insets top="10" bottom="10" left="20" right="20"/>
+        </BorderPane.margin>
+        <Text fx:id="server_ip_txt" text="Ip Address: 127.0.0.1"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Text fx:id="server_port_txt" text="Port: "/>
+        <TextField fx:id="server_port_txtfld" text="Enter port"/>
+    </HBox></top>
+
+    <center><Button fx:id="start_server_btn" text="Start Server" onAction="#start_server" BorderPane.alignment="CENTER"/></center>
+
+    <bottom><HBox alignment="CENTER_LEFT">
+        <BorderPane.margin>
+            <Insets top="10" bottom="10" left="10" right="10"/>
+        </BorderPane.margin>
+        <Text fx:id="server_status_txt" text="Status: "/>
+        <TextField fx:id="server_status_txtfld" editable="false"/>
+    </HBox></bottom>
+</BorderPane>

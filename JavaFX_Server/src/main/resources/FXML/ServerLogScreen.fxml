@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<BorderPane fx:id="serverLog" xmlns:fx="http://javafx.com/fxml" fx:controller="ServerLogController">
+    <top><Text fx:id="server_log_txt" text="Server Log:" /></top>
+    <center><TextArea fx:id="server_log_txtfld" editable="false"/></center>
+</BorderPane>
